@@ -32,7 +32,7 @@ int main() {
     
 
     // Menampilkan Isi Obyek
-    cout << "//Menampilkan Isi Obyek" << endl;
+    cout << "Menampilkan Isi Obyek" << endl;
     cout << "Nama   : " << mhs.nama << endl;
     cout << "Desa   : " << mhs.alamat.desa << endl;
     cout << "Kota   : " << mhs.alamat.kota << endl;
