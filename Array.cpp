@@ -45,3 +45,25 @@ int main() {
     cout << "Data ke - 3 : " << datamu[2] << endl;
     cout << "Data ke - 4 : " << datamu[3] << endl;
     cout << "Data ke - 5 : " << datamu[4] << endl;
+
+  cout << endl;
+
+    // --- BAGIAN 3: MENGGUNAKAN PERULANGAN (FOR LOOP) ---
+
+    // Isi data dengan pengulangan for
+    cout << "//isi data dengan pengulangan for" << endl;
+    for (int i = 0; i <= 4; i++) {
+        cout << "Data Index ke - " << i << " : ";
+        cin >> datamu[i];
+    }
+
+    cout << endl;
+
+    // Menampilkan datamu dengan pengulangan for
+    cout << "//Menampilkan datamu dengan pengulangan for" << endl;
+    for (int i = 0; i <= 4; i++) {
+        cout << "Data ke - " << i + 1 << " : " << datamu[i] << endl;
+    }
+
+    return 0;
+}
