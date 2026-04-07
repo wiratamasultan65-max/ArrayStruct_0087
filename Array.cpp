@@ -46,7 +46,7 @@ int main() {
     cout << "Data ke - 4 : " << datamu[3] << endl;
     cout << "Data ke - 5 : " << datamu[4] << endl;
 
-  cout << endl;
+    cout << endl;
 
     // --- BAGIAN 3: MENGGUNAKAN PERULANGAN (FOR LOOP) ---
 
