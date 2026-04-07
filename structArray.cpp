@@ -1,29 +1,24 @@
 #include <iostream>
+#include <string> // Tambahkan library string agar lebih aman
 using namespace std;
 
-// Struct pertama untuk detail alamat
 struct DetailAlamat {
     string desa;
     string kota;
 };
 
-// Struct kedua yang mengandung struct DetailAlamat
 struct orang {
     string nama;
-    DetailAlamat alamat; // Nested struct
+    DetailAlamat alamat; 
     int umur;
 };
 
 int main() 
 {
-    // Deklarasi obyek dari struct orang
-    orang mhs[3]; // Array of struct orang
+    orang mhs[3]; 
 
-
-
-    //isi objek
-    for (int i = 0; i < 3; i++) 
-    {
+    // --- BAGIAN INPUT ---
+    for (int i = 0; i < 3; i++) {
         cout << "Mahasiswa ke-" << i + 1 << endl;
         cout << "Nama Mahasiswa : ";
         getline(cin, mhs[i].nama);
@@ -33,11 +28,11 @@ int main()
         getline(cin, mhs[i].alamat.kota);
         cout << "Umur : ";
         cin >> mhs[i].umur;
-        cin.ignore(); // Membersihkan buffer input      
+        cin.ignore();     
         cout << endl;
-    
-    }
-    // Menampilkan Isi Obyek
+    } // <--- KAMU TADI LUPA MENAMBAHKAN INI
+
+    // --- BAGIAN OUTPUT ---
     cout << "Menampilkan Isi Obyek" << endl;
     for (int i = 0; i < 3; i++) {
         cout << "Mahasiswa ke-" << i + 1 << endl;
@@ -45,7 +40,8 @@ int main()
         cout << "Desa   : " << mhs[i].alamat.desa << endl;
         cout << "Kota   : " << mhs[i].alamat.kota << endl;
         cout << "Umur   : " << mhs[i].umur << endl;
+        cout << "--------------------" << endl;
     }       
 
     return 0;
-    }
+}
